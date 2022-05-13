@@ -8,7 +8,6 @@ public class Vector2D
     private float m_y;
 
     // Constructors
-
     public Vector2D()
     {
         m_x = 0.0f;
@@ -47,6 +46,8 @@ public class Vector2D
         m_x = new_x;
     }
 
+    // Public Methods
+
     /**
      * This method adds a Vector2D to this Vector2D
      *
@@ -69,5 +70,12 @@ public class Vector2D
         m_x = vector.getX() - m_x;
         m_y = vector.getY() - m_x;
         return this;
+    }
+
+    // Overridden Methods
+    @Override
+    public String toString()
+    {
+        return ("(" + getX() + ", " + getY() + ")");
     }
 }
