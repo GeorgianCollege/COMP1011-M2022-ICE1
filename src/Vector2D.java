@@ -68,7 +68,7 @@ public class Vector2D
     public Vector2D subtract(Vector2D vector)
     {
         m_x = vector.getX() - m_x;
-        m_y = vector.getY() - m_x;
+        m_y = vector.getY() - m_y;
         return this;
     }
 

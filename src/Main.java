@@ -9,9 +9,10 @@ public class Main
         Vector2D point3 = new Vector2D(40.0f, 50.0f);
 
         System.out.println("Point 1: " + point1.toString());
-
         System.out.println("Point 2: " + point2.toString());
-
         System.out.println("Point 3: " + point3.toString());
+
+        float distance = Utility.Distance(point2, point3);
+        System.out.println("Distance between Point 2 and Point 3 is: " + distance);
     }
 }
